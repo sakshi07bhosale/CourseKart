@@ -1,0 +1,183 @@
+{%load static%}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CourseKart</title>
+    <link rel="stylesheet" href="{% static 'CourseKartapp/css/style.css' %}">
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">CourseKart</div>
+        <nav>
+            <a href="{% url 'index' %}" class="active">Home</a>
+            <a href="{% url 'courses' %}">Courses</a>
+            <a href="{% url 'about' %}">About</a>
+            <a href="{% url 'contact' %}">Contact</a>
+        </nav>
+    </header>
+
+    <section class="hero-section">
+        <div class="hero-text">
+            <h1>Level Up Your<br>Skills<span>&nbsp;No Cap!🚀</span></h1>
+            <p>Join 50K+ learners who are absolutely crushing it! Get<br>real skills,land that dream job,and build the
+                future you
+                <br>want.Let's go!💪</p>
+            <div class="buttons">
+                <a href="{% url 'courses' %}" class="btn-primary">Let's go!💪</a>
+                <a href="{% url 'about' %}" class="btn-secondary">Tell Me More</a>
+            </div>
+            <section class="stats">
+                <div class="stat">
+                    <h2>50K+</h2>
+                    <p>Students</p>
+                </div>
+                <div class="stat">
+                    <h2>200+</h2>
+                    <p>Courses</p>
+                </div>
+                <div class="stat">
+                    <h2>98%</h2>
+                    <p>Success Rate</p>
+                </div>
+                <div class="stat">
+                    <h2>4.9★</h2>
+                    <p>Rating</p>
+                </div>
+            </section>
+
+    </section>
+
+    <section class="section">
+        <h2>Why Choose CourseKart?</h2>
+        <p>Discover what makes us the preffered choice for professional devlopment.</p>
+
+
+        <div class="cards">
+
+            <div class="card">
+                <h1>🎯</h1>
+                <h3>Industry Focused</h3>
+                <p>Learn skills that employers actually want.Our curriculum is designed by industry experts.</p>
+            </div>
+            <div class="card">
+                <h1>👨‍💻</h1>
+                <h3>Expert Instructors</h3>
+                <p>Learn from professionals with real-world experience and proven track records.</p>
+            </div>
+            <div class="card">
+                <h1>💼</h1>
+                <h3>Career Support</h3>
+                <p>Get help with job placement,resume building, and career guidance.</p>
+            </div>
+
+            <div class="card">
+                <h1>🔄</h1>
+                <h3>Lifetime Access</h3>
+                <p>Access course materials forever,even after completion.Learn at your own pace.</p>
+            </div>
+            <div class="card">
+                <h1>📱</h1>
+                <h3>Learn Anywhere</h3>
+                <p>Access courses on any device-desktop,tablet,or mobile.Learn on the go.</p>
+            </div>
+
+            <div class="card">
+                <h1>🏆</h1>
+                <h3>Certificates</h3>
+                <p>Earn industry-recognized certificates upon course completion to boost your resume.</p>
+            </div>
+
+    </section>
+
+    <section class="section2">
+        <h2>Featured Cources</h2>
+        <p>Start your learning journing with our most popular courses.</p>
+        <div class="course-card">
+            <img src="{% static 'CourseKartapp/images/java-cources.jpeg' %}" alt="Java Course">
+            <div class="course-content">
+                <h3>Java Programming</h3>
+                <p>Start to intermediate java course</p>
+                <p class="timing">🕒6 Month</p>
+                <hr>
+                <a href="{% url 'courses' %}">Enroll Now</a>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="footer-grid">
+            <div>
+                <h4 class="project-name">CourseKart</h4>
+                <p>Empowering professionals worldwide with quality education advancement and career advancement
+                    opportunities.</p>
+
+                <div class="footer-container">
+                    <a href="https://www.facebook.com/" target="_blank">
+                        <img src="{% static 'CourseKartapp/images/facebook.png' %}" alt="Facebook">
+                    </a>
+
+                    <a href="https://x.com/home" target="_blank">
+                        <img src="{% static 'CourseKartapp/images/twitter.png' %}" alt="Twitter">
+                    </a>
+
+                    <a href="https://in.linkedin.com/company/futurebright-it-solutions-pvt-ltd" target="_blank">
+                        <img src="{% static 'CourseKartapp/images/linkedin.png' %}" alt="LinkedIn">
+                    </a>
+
+                    <a href="https://www.instagram.com/p/DO0WEFyEwJB/" target="_blank">
+                        <img src="{% static 'CourseKartapp/images/instagram.png' %}" alt="Instagram">
+                    </a>
+                </div>
+
+
+            </div>
+            <div>
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="{% url 'index' %}">Home</a></li>
+               <li> <a href="{% url 'courses' %}">Courses</a></li>
+                <li><a href="{% url 'about' %}">About</a></li>
+               <li> <a href="{% url 'contact' %}">Contact</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4>Categories</h4>
+                <ul>
+                     <li><a href="#">Technology</a></li>
+                <li><a href="#">Design</a></li>
+                <li><a href="#">Programming</a></li>
+                <li><a href="#">Software</a></li>
+                </ul>
+            </div>
+            <div class="support-box">
+                <h4>Support</h4>
+
+                <a href="mailto:sakshi07bhosale@gmail.com">
+                    <img src="{% static 'CourseKartapp/images/mail.png' %}" alt="mail">sakshi07bhosale@gmail.com
+                </a>
+
+                <a href="tel:+919876543210">
+                    <img src="{% static 'CourseKartapp/images/call.png' %}" alt="call"> +91 98765 43210
+                </a>
+
+                <a href="https://maps.app.goo.gl/ED8HkT9jYtCACtvy6" target="_blank">
+                    <img src="{% static 'CourseKartapp/images/location.png' %}" alt="location">
+                    7th Floor, Business Bay, Shri Hari Narayan Kute Marg, Mumbai Naka,
+                    Matoshree Nagar, Nashik, Maharashtra 422002
+                </a>
+            </div>
+
+
+        </div>
+
+        <div class="copyright">
+            © 2024 CourseKart. All rights reserved.
+        </div>
+    </footer>
+</body>
+
+</html>
