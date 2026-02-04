@@ -1,0 +1,172 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CourseKart</title>
+    <link rel="stylesheet" href="{% static 'CourseKartapp/css/contact.css' %}" />
+  </head>
+
+  <body>
+    <header>
+      <div class="logo">CourseKart</div>
+      <nav>
+        <a href="{% url 'index' %}">Home</a>
+        <a href="{% url 'courses' %}">Courses</a>
+        <a href="{% url 'about' %}">About</a>
+        <a href="{% url 'contact' %}" class="active">Contact</a>
+      </nav>
+    </header>
+
+    <section class="hero-section">
+      <div class="hero-text">
+        <h1>Let's<span>&nbsp;Connect</span>💬</h1>
+        <p>
+          Got questions? We're all ears! Hit us up and let's chat<br />about your goals.We're here to help you win!🏆
+        </p>
+      </div>
+      <div class="buttons">
+        <a href="{% url 'courses' %}" class="btn-primary">View Courses</a>
+        {% comment %} <a href="./course.html" class="btn-secondary">View Cources</a> {% endcomment %}
+      </div>
+      <section class="stats">
+        <div class="stat">
+          <h2>50K+</h2>
+          <p>Students</p>
+        </div>
+        <div class="stat">
+          <h2>200+</h2>
+          <p>Courses</p>
+        </div>
+        <div class="stat">
+          <h2>98%</h2>
+          <p>Success Rate</p>
+        </div>
+        <div class="stat">
+          <h2>4.9★</h2>
+          <p>Rating</p>
+        </div>
+      </section>
+    </section>
+
+    <section class="contact-section">
+      <h1>Get in Touch</h1>
+      <p class="subtitle">Have questions? We'd love to hear from you</p>
+
+      <div class="contact-container">
+        <!-- LEFT INFO -->
+        <div class="contact-info">
+          <a href="mailto:sakshi07bhosale@gmail.com" class="map-link">
+            <div class="info-card">
+              <h3>📧 Email Us</h3>
+              <p>sakshi07bhosale@gmail.com</p>
+            </div>
+          </a>
+
+          <div class="info-card">
+            <h3>📞 Call Us</h3>
+            <p>+1 (555) 123-4567</p>
+          </div>
+
+          <a href="https://maps.app.goo.gl/ED8HkT9jYtCACtvy6" target="_blank" class="map-link">
+            <div class="info-card">
+              <h3>📍 Visit Us</h3>
+              <p>FutureBright IT Solutions Pvt. Ltd.</p>
+            </div>
+          </a>
+        </div>
+
+        <!-- RIGHT FORM -->
+        <div class="contact-form">
+          <form>
+            <div class="row">
+              <div>
+                <label>FULL NAME</label>
+                <input type="text" placeholder="John Doe" />
+              </div>
+              <div>
+                <label>EMAIL ADDRESS</label>
+                <input type="email" placeholder="john@example.com" />
+              </div>
+            </div>
+
+            <label>SUBJECT</label>
+            <input type="text" placeholder="How can we help?" />
+
+            <label>MESSAGE</label>
+            <textarea placeholder="Your message here..."></textarea>
+
+            <button type="submit" class="send-btn">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div class="footer-grid">
+        <div>
+          <h4 class="project-name">CourseKart</h4>
+          <p>Empowering professionals worldwide with quality education advancement and career advancement opportunities.</p>
+
+          <div class="footer-container">
+            <a href="https://www.facebook.com/" target="_blank"><img src="{% static 'CourseKartapp/images/facebook.png' %}" alt="Facebook" /></a>
+
+            <a href="https://x.com/home" target="_blank"><img src="{% static 'CourseKartapp/images/twitter.png' %}" alt="Twitter" /></a>
+
+            <a href="https://in.linkedin.com/company/futurebright-it-solutions-pvt-ltd" target="_blank"><img src="{% static 'CourseKartapp/images/linkedin.png' %}" alt="LinkedIn" /></a>
+
+            <a href="https://www.instagram.com/p/DO0WEFyEwJB/" target="_blank"><img src="{% static 'CourseKartapp/images/instagram.png' %}" alt="Instagram" /></a>
+          </div>
+        </div>
+        <div>
+          <h4>Quick Links</h4>
+          <ul>
+            <li>
+              <a href="{% url 'index' %}">Home</a>
+            </li>
+            <li>
+              <a href="{% url 'courses' %}">Courses</a>
+            </li>
+            <li>
+              <a href="{% url 'about' %}">About</a>
+            </li>
+            <li>
+              <a href="{% url 'contact' %}">Contact</a>
+            </li>
+          </ul>
+        </div>
+        <div>
+          <h4>Categories</h4>
+          <ul>
+            <li>
+              <a href="#">Technology</a>
+            </li>
+            <li>
+              <a href="#">Design</a>
+            </li>
+            <li>
+              <a href="#">Programming</a>
+            </li>
+            <li>
+              <a href="#">Software</a>
+            </li>
+          </ul>
+        </div>
+        <div class="support-box">
+          <h4>Support</h4>
+
+          <a href="mailto:sakshi07bhosale@gmail.com"><img src="{% static 'CourseKartapp/images/mail.png' %}" alt="mail" />sakshi07bhosale@gmail.com</a>
+
+          <a href="tel:+919876543210"><img src="{% static 'CourseKartapp/images/call.png' %}" alt="call" /> +91 98765 43210</a>
+
+          <a href="https://maps.app.goo.gl/ED8HkT9jYtCACtvy6" target="_blank">
+            <img src="{% static 'CourseKartapp/images/location.png' %}" alt="location" />
+            7th Floor, Business Bay, Shri Hari Narayan Kute Marg, Mumbai Naka, Matoshree Nagar, Nashik, Maharashtra 422002
+          </a>
+        </div>
+      </div>
+
+      <div class="copyright">© 2024 CourseKart. All rights reserved.</div>
+    </footer>
+  </body>
+</html>
