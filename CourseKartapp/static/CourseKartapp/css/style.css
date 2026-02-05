@@ -442,3 +442,182 @@ footer a:hover {
     font-size: 14px;
     color: #777;
 }
+/* ===============media query======================= */
+@media (max-width: 600px) {
+
+    header {
+        padding: 15px 20px;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .logo {
+        padding-left: 0;
+        text-align: center;
+    }
+
+    nav a {
+        margin-left: 10px;
+        font-size: 14px;
+    }
+
+    .hero-section {
+        padding: 30px 20px;
+    }
+
+    .hero-text h1 {
+        font-size: 28px;
+    }
+
+    .stats {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .cards {
+        width: 100%;
+        padding-left: 0;
+        grid-template-columns: 1fr;
+    }
+
+    .section,
+    .section2 {
+        padding: 30px 20px;
+    }
+
+    footer {
+        padding: 30px 20px;
+    }
+}
+
+@media (max-width: 600px) {
+
+    header {
+        padding: 15px 20px;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .logo {
+        padding-left: 0;
+        text-align: center;
+    }
+
+    nav a {
+        margin-left: 10px;
+        font-size: 14px;
+    }
+
+    .hero-section {
+        padding: 30px 20px;
+    }
+
+    .hero-text h1 {
+        font-size: 28px;
+    }
+
+    .stats {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .cards {
+        width: 100%;
+        padding-left: 0;
+        grid-template-columns: 1fr;
+    }
+
+    .section,
+    .section2 {
+        padding: 30px 20px;
+    }
+
+    footer {
+        padding: 30px 20px;
+    }
+}
+
+@media (min-width: 601px) and (max-width: 900px) {
+
+    .logo {
+        padding-left: 0;
+    }
+
+    .hero-section {
+        padding: 40px;
+    }
+
+    .stats {
+        flex-wrap: wrap;
+    }
+
+    .cards {
+        width: 100%;
+        padding-left: 0;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media (min-width: 901px) and (max-width: 1200px) {
+
+    .cards {
+        width: 100%;
+        padding-left: 0;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .logo {
+        padding-left: 50px;
+    }
+}
+
+/* ---- MOBILE ---- */
+@media (max-width: 768px) {
+
+    header {
+        flex-direction: column;
+        padding: 15px 20px;
+    }
+
+    .logo {
+        padding-left: 0;
+        margin-bottom: 10px;
+        text-align: center;
+    }
+
+    nav {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    nav a {
+        margin-left: 0;
+        font-size: 14px;
+    }
+
+    .hero-section {
+        padding: 30px 20px;
+    }
+
+    .cards {
+        width: 100%;
+        padding-left: 0;
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+}
+
+/* ---- TABLET ---- */
+@media (min-width: 769px) and (max-width: 1024px) {
+
+    .logo {
+        padding-left: 0;
+    }
+
+    .cards {
+        width: 100%;
+        padding-left: 0;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
