@@ -276,3 +276,152 @@ footer a:hover {
     font-size: 14px;
     color: #777;
 }
+/* ========================= */
+/* ===== MEDIA QUERY ======= */
+/* ========================= */
+
+/* -------- MOBILE VIEW -------- */
+@media (max-width: 768px) {
+
+    header {
+        flex-direction: column;
+        padding: 15px 20px;
+        text-align: center;
+    }
+
+    .logo {
+        padding-left: 0;
+        margin-bottom: 10px;
+    }
+
+    nav {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    nav a {
+        margin-left: 0;
+        font-size: 14px;
+    }
+
+    .hero-section {
+        padding: 30px 20px;
+    }
+
+    .hero-text h1 {
+        font-size: 28px;
+    }
+
+    .buttons a {
+        display: block;
+        margin: 10px auto;
+        text-align: center;
+    }
+
+    .stats {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .stat {
+        width: 100%;
+        text-align: center;
+    }
+
+    footer {
+        padding: 30px 20px;
+    }
+
+    .footer-grid {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .footer-container {
+        justify-content: center;
+    }
+
+    .support-box a {
+        justify-content: center;
+    }
+}
+
+/* -------- TABLET VIEW -------- */
+@media (min-width: 769px) and (max-width: 1024px) {
+
+    .logo {
+        padding-left: 0;
+    }
+
+    .hero-section {
+        padding: 40px;
+    }
+
+    .hero-text h1 {
+        font-size: 36px;
+    }
+
+    .stats {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .stat {
+        width: 45%;
+        text-align: center;
+    }
+
+    .footer-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+
+    header {
+        flex-direction: column;   /* logo top, menu below */
+        padding: 15px 20px;
+        text-align: center;
+    }
+
+    .logo {
+        padding-left: 0;          /* remove big left space */
+        margin-bottom: 10px;
+        font-size: 20px;
+    }
+
+    nav {
+        display: flex;
+        flex-wrap: wrap;          /* links go to next line */
+        justify-content: center;
+        gap: 10px;
+    }
+
+    nav a {
+        margin-left: 0;
+        font-size: 14px;
+    }
+}
+
+/* TABLET */
+@media (min-width: 769px) and (max-width: 1024px) {
+
+    header {
+        padding: 15px 40px;
+    }
+
+    .logo {
+        padding-left: 0;
+        font-size: 22px;
+    }
+
+    nav a {
+        margin-left: 15px;
+        font-size: 15px;
+    }
+}
