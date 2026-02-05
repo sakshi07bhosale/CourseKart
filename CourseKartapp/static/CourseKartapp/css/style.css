@@ -180,6 +180,29 @@ nav a.active {
 .stat p {
     color: #777;
 }
+.roll {
+    height: 32px;
+    overflow: hidden;
+    display: inline-block;
+}
+
+.roll span {
+    display: block;
+    height: 32px;
+}
+
+/* Animations */
+.roll1 span { animation: count1 2s ease-out forwards; }
+.roll2 span { animation: count2 2s ease-out forwards; }
+.roll3 span { animation: count3 2s ease-out forwards; }
+.roll4 span { animation: count4 2s ease-out forwards; }
+
+@keyframes count1 { to { transform: translateY(-160px); } }
+@keyframes count2 { to { transform: translateY(-128px); } }
+@keyframes count3 { to { transform: translateY(-128px); } }
+@keyframes count4 { to { transform: translateY(-128px); } }
+
+
 
 /* ======about us============ */
 
