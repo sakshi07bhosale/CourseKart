@@ -104,23 +104,24 @@
 
         <!-- RIGHT FORM -->
         <div class="contact-form">
-          <form>
+          <form method="POST">
+            {% csrf_token%}
             <div class="row">
               <div>
                 <label>FULL NAME</label>
-                <input type="text" placeholder="John Doe" />
+                <input type="text" name=name placeholder="John Doe" />
               </div>
               <div>
                 <label>EMAIL ADDRESS</label>
-                <input type="email" placeholder="john@example.com" />
+                <input type="email" name="email" placeholder="john@example.com" />
               </div>
             </div>
 
             <label>SUBJECT</label>
-            <input type="text" placeholder="How can we help?" />
+            <input type="text" name="subject" placeholder="How can we help?" />
 
             <label>MESSAGE</label>
-            <textarea placeholder="Your message here..."></textarea>
+            <textarea placeholder="Your message here..." name="message"></textarea>
 
             <button type="submit" class="send-btn">Send Message</button>
           </form>
