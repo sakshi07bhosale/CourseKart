@@ -25,29 +25,54 @@
         <p>
           Got questions? We're all ears! Hit us up and let's chat<br />about your goals.We're here to help you win!🏆
         </p>
-      </div>
-      <div class="buttons">
-        <a href="{% url 'courses' %}" class="btn-primary">View Courses</a>
-        {% comment %} <a href="./course.html" class="btn-secondary">View Cources</a> {% endcomment %}
-      </div>
-      <section class="stats">
+        <div class="buttons">
+          <a href="{% url 'courses' %}" class="btn-primary">View Courses</a>
+          {% comment %} <a href="./course.html" class="btn-secondary">View Cources</a> {% endcomment %}
+        </div>
+        <section class="stats" id="stats-section">
         <div class="stat">
-          <h2>50K+</h2>
+          <h2 class="roll roll1">
+            <span>0</span>
+            <span>10K</span>
+            <span>20K</span>
+            <span>30K</span>
+            <span>40K</span>
+            <span>50K+</span>
+          </h2>
           <p>Students</p>
         </div>
         <div class="stat">
-          <h2>200+</h2>
+          <h2 class="roll roll2">
+            <span>0</span>
+            <span>50</span>
+            <span>100</span>
+            <span>150</span>
+            <span>200+</span>
+          </h2>
           <p>Courses</p>
         </div>
         <div class="stat">
-          <h2>98%</h2>
+          <h2 class="roll roll3">
+            <span>0%</span>
+            <span>25%</span>
+            <span>50%</span>
+            <span>75%</span>
+            <span>98%</span>
+          </h2>
           <p>Success Rate</p>
         </div>
         <div class="stat">
-          <h2>4.9★</h2>
+          <h2 class="roll roll4">
+            <span>0★</span>
+            <span>2★</span>
+            <span>3★</span>
+            <span>4★</span>
+            <span>4.9★</span>
+          </h2>
           <p>Rating</p>
         </div>
-      </section>
+        </section>
+      </div>
     </section>
 
     <section class="contact-section">
@@ -168,5 +193,22 @@
 
       <div class="copyright">© 2024 CourseKart. All rights reserved.</div>
     </footer>
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        var stats = document.getElementById('stats-section');
+        if (stats && 'IntersectionObserver' in window) {
+          var observer = new IntersectionObserver(function(entries) {
+            entries.forEach(function(entry) {
+              if (entry.isIntersecting) {
+                entry.target.classList.add('animate');
+              }
+            });
+          }, { threshold: 0.3 });
+          observer.observe(stats);
+        } else if (stats) {
+          stats.classList.add('animate');
+        }
+      });
+    </script>
   </body>
 </html>

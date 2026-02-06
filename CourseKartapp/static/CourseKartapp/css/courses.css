@@ -190,16 +190,16 @@ nav a.active {
     height: 32px;
 }
 
-/* Animations */
-.roll1 span { animation: count1 2s ease-out forwards; }
-.roll2 span { animation: count2 2s ease-out forwards; }
-.roll3 span { animation: count3 2s ease-out forwards; }
-.roll4 span { animation: count4 2s ease-out forwards; }
+/* Stats count-up: start at 0, animate to final value when in view */
+.stats.animate .roll1 span { animation: count1 1.5s ease-out forwards; }
+.stats.animate .roll2 span { animation: count2 1.5s ease-out 0.15s forwards; }
+.stats.animate .roll3 span { animation: count3 1.5s ease-out 0.3s forwards; }
+.stats.animate .roll4 span { animation: count4 1.5s ease-out 0.45s forwards; }
 
-@keyframes count1 { to { transform: translateY(-160px); } }
-@keyframes count2 { to { transform: translateY(-128px); } }
-@keyframes count3 { to { transform: translateY(-128px); } }
-@keyframes count4 { to { transform: translateY(-128px); } }
+@keyframes count1 { from { transform: translateY(0); } to { transform: translateY(-160px); } }
+@keyframes count2 { from { transform: translateY(0); } to { transform: translateY(-128px); } }
+@keyframes count3 { from { transform: translateY(0); } to { transform: translateY(-128px); } }
+@keyframes count4 { from { transform: translateY(0); } to { transform: translateY(-128px); } }
 
 
 /* ===== FOOTER ===== */
