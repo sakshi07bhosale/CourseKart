@@ -120,48 +120,66 @@
         <h2>Your Coaching Certificates</h2>
         <p>Showcase your achievements and skills with industry-recognized certificates.</p>
         <div class="cards2">
-            <div class="card">
-                <h1>🏆</h1><br>
-                <h3>Java Programming</h3>
-                <p>Completed: January 2024</p>
-                <button class="btn" onclick="verify(this)">VERIFIED</button>
+            <div class="card cert-card">
+                <input type="checkbox" id="cert-1" class="cert-toggle">
+                <div class="cert-card-front">
+                    <h1>🏆</h1><br>
+                    <h3>Java Programming</h3>
+                    <p>Completed: January 2024</p>
+                    <label for="cert-1" class="btn">VERIFIED</label>
+                </div>
+                <div class="cert-card-open">
+                    <div class="cert-img-wrap">
+                        <img src="{% static 'CourseKartapp/images/JavaCertification.jpeg' %}" alt="Certificate">
+                        <label for="cert-1" class="cert-img-btn">OK</label>
+                    </div>
+                </div>
             </div>
-            <div class="card">
-                <h1>🎓</h1><br>
-                <h3>Full-Stack Development</h3>
-                <p>Completed: December 2023</p>
-                <button class="btn" onclick="verify(this)">VERIFIED</button>
-
+            <div class="card cert-card">
+                <input type="checkbox" id="cert-2" class="cert-toggle">
+                <div class="cert-card-front">
+                    <h1>🎓</h1><br>
+                    <h3>Full-Stack Development</h3>
+                    <p>Completed: December 2023</p>
+                    <label for="cert-2" class="btn">VERIFIED</label>
+                </div>
+                <div class="cert-card-open">
+                    <div class="cert-img-wrap">
+                        <img src="{% static 'CourseKartapp/images/FullstackCertification.jpeg' %}" alt="Certificate">
+                        <label for="cert-2" class="cert-img-btn">OK</label>
+                    </div>
+                </div>
             </div>
-            <div class="card">
-                <h1>💻</h1><br>
-                <h3>C++ Advanced</h3>
-                <p>Completed: November 2023</p>
-                <button class="btn" onclick="verify(this)">VERIFIED</button>
-
+            <div class="card cert-card">
+                <input type="checkbox" id="cert-3" class="cert-toggle">
+                <div class="cert-card-front">
+                    <h1>💻</h1><br>
+                    <h3>C++ Advanced</h3>
+                    <p>Completed: November 2023</p>
+                    <label for="cert-3" class="btn">VERIFIED</label>
+                </div>
+                <div class="cert-card-open">
+                    <div class="cert-img-wrap">
+                        <img src="{% static 'CourseKartapp/images/CppCertification.jpeg' %}" alt="Certificate">
+                        <label for="cert-3" class="cert-img-btn">OK</label>
+                    </div>
+                </div>
             </div>
-            <div class="card">
-                <h1>🚀</h1><br>
-                <h3>Web Development</h3>
-                <p>Completed: October 2023</p>
-                <button class="btn" onclick="verify(this)">VERIFIED</button>
-
+            <div class="card cert-card">
+                <input type="checkbox" id="cert-4" class="cert-toggle">
+                <div class="cert-card-front">
+                    <h1>🚀</h1><br>
+                    <h3>Web Development</h3>
+                    <p>Completed: October 2023</p>
+                    <label for="cert-4" class="btn">VERIFIED</label>
+                </div>
+                <div class="cert-card-open">
+                    <div class="cert-img-wrap">
+                        <img src="{% static 'CourseKartapp/images/WebCertification.jpeg' %}" alt="Certificate">
+                        <label for="cert-4" class="cert-img-btn">OK</label>
+                    </div>
+                </div>
             </div>
-            <script>
-function verify(btn) {
-    if (btn.innerText === "VERIFIED") {
-        btn.innerText = "DONE";
-        btn.style.backgroundColor = "lightgreen";
-        btn.style.color = "green";
-    } else {
-        btn.innerText = "VERIFIED";
-        btn.style.backgroundColor = "";
-        btn.style.color = "";
-    }
-}
-</script>
-
-
         </div>
     </section>
     <footer>
