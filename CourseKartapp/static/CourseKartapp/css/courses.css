@@ -200,6 +200,80 @@ nav a.active {
 @keyframes count2 { from { transform: translateY(0); } to { transform: translateY(-128px); } }
 @keyframes count3 { from { transform: translateY(0); } to { transform: translateY(-128px); } }
 @keyframes count4 { from { transform: translateY(0); } to { transform: translateY(-128px); } }
+/* ====================cards=============== */
+
+.course-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+    padding: 40px 80px;
+}
+.course-container:hover {
+    background-color: rgba(219, 77, 255, 0.05);
+}
+
+.course-card {
+   position: relative;
+    background: #fff;
+    padding: 20px;
+    border-radius: 15px;
+
+    /* Normal border on 3 sides */
+    border: 1px solid #eee;
+
+    transition: all 0.3s ease;
+    overflow: hidden;
+}
+
+/* LEFT GRADIENT BORDER */
+.course-card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: linear-gradient(180deg, #8a2be2, #ff4d6d);
+    transition: width 0.3s ease;
+    border-radius: 15px 0 0 15px;
+}
+
+/* ON HOVER */
+.course-card:hover::before {
+    width: 3px;
+    /* increase if needed */
+}
+
+
+.course-card:hover {
+    transform: translateY(-5px);
+}
+
+.img-box img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.course-content {
+    padding: 15px;
+}
+
+.course-content h3 {
+    margin-bottom: 8px;
+}
+
+.course-content p {
+    font-size: 14px;
+    color: #666;
+}
+
+.course-content h4 {
+    margin-top: 10px;
+    color: purple;
+}
+
+
 
 
 /* ===== FOOTER ===== */

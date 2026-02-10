@@ -81,7 +81,32 @@
 
 
     </section>
+ <div class="course-container">
+    {% for c in courses %}
+    <div class="course-card">
 
+        <div class="img-box">
+           {% if c.image %}
+           <img src="{{ c.image.url }}" alt="course">
+           {% else %}
+           <img src="{% static 'CourseKartapp/images/default.png' %}" alt="no image">
+           {% endif %}
+
+        </div>
+
+        <div class="course-content">
+            <h3>{{ c.title }}</h3>
+            <p>{{ c.description }}</p>
+
+            <p class="level">Level: {{ c.level }}</p>
+            <p class="duration">Duration: {{ c.duration_months }} Months</p>
+
+            <h4>₹{{ c.price }}</h4>
+        </div>
+
+    </div>
+    {% endfor %}
+</div>
  <footer>
         <div class="footer-grid">
             <div>
