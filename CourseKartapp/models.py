@@ -19,7 +19,7 @@ class ContactData(models.Model):
 class Course(models.Model):
     title = models.CharField(max_length=200)
     description = models.TextField(default="No Description")
-    # image = models.ImageField(upload_to='course_images/')
+    image = models.ImageField(upload_to='course_images/', blank=True, null=True)
     duration_months = models.IntegerField(default=0)
     level = models.CharField(max_length=50, default="Beginner")
     price = models.IntegerField()
