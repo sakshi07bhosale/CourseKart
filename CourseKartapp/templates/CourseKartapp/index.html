@@ -128,10 +128,16 @@
     </section>
 
     <section class="section2">
-        <h2>Featured Cources</h2>
-        <p>Start your learning journing with our most popular courses.</p>
+    <h2>Featured Courses</h2>
+    <p>Start your learning journey with our most popular courses.</p>
+
+    <div class="course-container">  
         <div class="course-card">
-            <img src="{% static 'CourseKartapp/images/java-cources.jpeg' %}" alt="Java Course">
+            <a href="https://youtu.be/yRpLlJmRo2w?si=5chr7D3B-hkt6M9G" target="_blank" class="video-link">
+                <img src="{% static 'CourseKartapp/images/java-cources.jpeg' %}" alt="Java Course">
+                <span class="play-btn">▶</span>
+            </a>
+
             <div class="course-content">
                 <h3>Java Programming</h3>
                 <p>Start to intermediate java course</p>
@@ -140,7 +146,39 @@
                 <a href="{% url 'courses' %}">Enroll Now</a>
             </div>
         </div>
-    </section>
+
+        <div class="course-card">
+            <a href="https://youtu.be/z9bZufPHFLU?si=6aWzlJRkn4sWb6pC" target="_blank" class="video-link">
+                <img src="{% static 'CourseKartapp/images/java-cources.jpeg' %}">
+                <span class="play-btn">▶</span>
+            </a>
+            <div class="course-content">
+                <h3>C++</h3>
+                <p>Start to intermediate java course</p>
+                <p class="timing">🕒6 Month</p>
+                <hr>
+                <a href="{% url 'courses' %}">Enroll Now</a>
+            </div>
+        </div>
+
+        <div class="course-card">
+            <a href="https://youtu.be/t2_Q2BRzeEE?si=4gALRZmnuMAmZPKE" target="_blank" class="video-link">
+                <img src="{% static 'CourseKartapp/images/java-cources.jpeg' %}">
+                <span class="play-btn">▶</span>
+            </a>
+            <div class="course-content">
+                <h3>Python</h3>
+                <p>Start to intermediate java course</p>
+                <p class="timing">🕒6 Month</p>
+                <hr>
+                <a href="{% url 'courses' %}">Enroll Now</a>
+            </div>
+        </div>
+
+    </div>  
+
+</section>
+
     <footer>
         <div class="footer-grid">
             <div>
