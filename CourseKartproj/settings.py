@@ -120,3 +120,4 @@ STATIC_URL = 'static/'
 # Media files (user uploads from admin)
 MEDIA_URL = '/media/'
 MEDIA_ROOT = BASE_DIR / 'media'
+
